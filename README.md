@@ -85,4 +85,3 @@ Event-driven programming: Agents react to messages
 Alice: Ordering Pizza, Salad
 Chef: Received order for Alice: Pizza, Salad
 Chef: Starting to cook Pizza, Salad for Alice (estimated time: 10 seconds)
-...
