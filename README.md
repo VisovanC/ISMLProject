@@ -76,31 +76,12 @@ Service: Waiter delivers food when chef finishes cooking
 Dining: Customers eat (simulated delay)
 Departure: Customers request bill and leave, freeing tables
 
-Message Flow Example
-Customer → Waiter: REQUEST_TABLE
-Waiter → Customer: TABLE_ASSIGNED:Table1
-Customer → Waiter: ORDER + "Pizza, Salad"
-Waiter → Chef: PREPARE_ORDER:Alice:Pizza, Salad
-Chef → Waiter: ORDER_READY:Alice
-Waiter → Customer: FOOD_SERVED
-Customer → Waiter: LEAVING
-Waiter → Customer: BILL:$35
-Learning Outcomes
-
 Multi-agent coordination: See how agents work together
 Message passing: Understand ACL communication
 Autonomous behavior: Agents make independent decisions
 Resource management: Handle limited resources (tables)
 Queue processing: Chef manages order queue
 Event-driven programming: Agents react to messages
-
-Console Output Example
-Waiter Agent Waiter is ready with 5 tables.
-Chef Agent Chef is ready to cook!
-Customer Agent Alice entered the restaurant.
-Alice: Requesting a table...
-Waiter: Assigned Table1 to Alice
-Alice: Got Table1
 Alice: Ordering Pizza, Salad
 Chef: Received order for Alice: Pizza, Salad
 Chef: Starting to cook Pizza, Salad for Alice (estimated time: 10 seconds)
