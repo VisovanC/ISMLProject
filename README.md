@@ -65,29 +65,6 @@ Random customer orders from menu
 Staggered customer arrivals
 Eating time simulation
 
-Setup Instructions
-Prerequisites
-
-Java JDK 8 or higher
-JADE Framework 4.5.0 or higher
-
-Installation
-
-Download JADE from http://jade.tilab.com/
-Extract JADE and note the location of jade.jar
-
-Project Structure
-restaurant/
-├── WaiterAgent.java      # Waiter agent implementation
-├── CustomerAgent.java    # Customer agent implementation
-├── ChefAgent.java        # Chef agent implementation
-├── RestaurantMain.java   # Main entry point
-└── README.md            # This file
-Compilation
-bashjavac -cp ".:/path/to/jade.jar" restaurant/*.java
-Running
-bashjava -cp ".:/path/to/jade.jar" restaurant.RestaurantMain
-How It Works
 Workflow
 
 Restaurant Opens: Waiter and Chef agents are created
@@ -116,16 +93,6 @@ Autonomous behavior: Agents make independent decisions
 Resource management: Handle limited resources (tables)
 Queue processing: Chef manages order queue
 Event-driven programming: Agents react to messages
-
-Possible Extensions
-
-Add Host Agent: Manages reservations and waiting list
-Kitchen Assistant: Helps chef with parallel cooking
-Delivery Agent: For takeout orders
-Rating System: Customers rate their experience
-Dynamic Pricing: Based on demand
-Special Events: Happy hour, busy periods
-Inventory Management: Track ingredients
 
 Console Output Example
 Waiter Agent Waiter is ready with 5 tables.
